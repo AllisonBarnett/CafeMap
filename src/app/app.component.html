@@ -1,6 +1,23 @@
-<agm-map [latitude]="lat" [longitude]="lng">
-  <!-- <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker> -->
-  <script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcUSugiFf5ZW-JTnDERKVuKDUdfqbvj9Y&map_ids=2b3be1a732157324&callback=initMap">
-</script>
+
+<app-header></app-header>
+<app-home></app-home>
+<agm-map
+[latitude]="lat" 
+[longitude]="lng"
+[zoom]="zoom" > 
+ 
+<!-- [styles]="styles" -->
+<!-- map-marker?
+
+<body>
+  <div id="container">
+    <div id="map"></div>
+    <div id="sidebar">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">Load more results</button>
+    </div>
+  </div>
+</body>-->
 </agm-map>
+

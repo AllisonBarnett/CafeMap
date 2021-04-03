@@ -5,15 +5,27 @@ import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HeaderComponent } from './header/header.component';
+import { StlCoffeeComponent } from './stl-coffee/stl-coffee.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProfileComponent,
+    HeaderComponent,
+    StlCoffeeComponent,
+    ReviewsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyAcUSugiFf5ZW-JTnDERKVuKDUdfqbvj9Y'})
+    AgmCoreModule.forRoot({apiKey: 'AIzaSyAcUSugiFf5ZW-JTnDERKVuKDUdfqbvj9Y',
+  libraries: ["places"]
+})
   ],
   providers: [],
   bootstrap: [AppComponent]

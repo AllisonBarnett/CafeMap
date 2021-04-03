@@ -1,4 +1,7 @@
 agm-map {
     height: 300px;
     margin: 50px;
+    margin-left: auto! important;
+    margin-right: auto! important;
+    /* width: 700px; */
 }
