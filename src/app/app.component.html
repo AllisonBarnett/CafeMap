@@ -1,23 +1,14 @@
 
 <app-header></app-header>
-<app-home></app-home>
-<agm-map
+<router-outlet></router-outlet>
+ <agm-map
 [latitude]="lat" 
 [longitude]="lng"
-[zoom]="zoom" > 
+[zoom]="zoom"
+[styles]="styles" > 
  
-<!-- [styles]="styles" -->
-<!-- map-marker?
+</agm-map> 
+<br>
 
-<body>
-  <div id="container">
-    <div id="map"></div>
-    <div id="sidebar">
-      <h2>Results</h2>
-      <ul id="places"></ul>
-      <button id="more">Load more results</button>
-    </div>
-  </div>
-</body>-->
-</agm-map>
+<app-public-reviews></app-public-reviews>
 

@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { StlCoffeeComponent } from './stl-coffee/stl-coffee.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { HomeComponent } from './home/home.component';
+import { PublicReviewsComponent } from './public-reviews/public-reviews.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HomeComponent } from './home/home.component';
     StlCoffeeComponent,
     ReviewsComponent,
     HomeComponent,
+    PublicReviewsComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
